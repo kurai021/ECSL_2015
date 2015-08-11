@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Javascript Creativo - El poder de Firefox OS",
+    "packageVersion": "0.0.1",
+    "revealTheme": "default",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}

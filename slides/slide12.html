@@ -1,0 +1,19 @@
+<h2>Código Básico</h2>
+<br>
+<pre>
+  <code class="javascript">
+        window.onload = function(){
+          window.addEventListener('userproximity', function(event){
+
+            var audio = new Audio('/doorbell-6.mp3');
+            audio.mozAudioChannelType = 'alarm';
+            audio.volume.alarm = 15;
+
+            if (event.near){
+              audio.play();
+              console.log("activado");
+            }
+          });
+        }
+  </code>
+</pre>

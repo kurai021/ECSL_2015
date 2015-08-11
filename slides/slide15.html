@@ -1,0 +1,16 @@
+<h2>Código Básico</h2>
+<br>
+<pre><code class="javascript">
+  window.onload = function(){
+    var context = new AudioContext();
+
+    var oscillator = context.createOscillator();
+
+    oscillator.connect(context.destination);
+    oscillator.start();
+
+    window.addEventListener('devicelight', function(e){
+      oscillator.frecuency.value = e.value * 10;
+    });
+  };
+</code></pre>

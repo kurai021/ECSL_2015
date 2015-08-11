@@ -1,0 +1,21 @@
+<h2>Código Básico</h2>
+<br>
+<pre><code class="javascript">
+  window.onload = function(){
+    a = Synth({ maxVoices:4, waveform:'PWM', attack:ms(1), decay:ms(1000) })
+
+    background(000);
+
+    colorMode(HSB, 255);
+
+    window.addEventListener('devicelight', function(e){
+
+      a.note.seq( Math.round(data.x), 1/2 )
+
+      stroke(data.x * 40, 255, 255);
+      fill(data.x * 40, 255, 255, 127);
+      ellipse(data.x * 100, data.y * 50, 50, 50);
+
+    });
+  };
+</code></pre>
